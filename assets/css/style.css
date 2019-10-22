@@ -1,0 +1,434 @@
+/* 
+    PEDRO HENRIQUE V CORDISTA
+    CREATIVECODE | DEVSPACE
+    //
+    
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
+* {
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw !important;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+:root {
+    --orange: #ef4e2a;
+    --grey: #6f6f6f;
+}
+
+input {
+    margin-bottom: 0px !important
+}
+
+input::placeholder, textarea::placeholder {
+    font-style: italic;
+    padding: 15px;
+}
+
+.btn-padrao:hover {
+    background-color: var(--orange) !important;
+    color: white;
+}
+
+.btn-padrao {
+    transition: .3s;
+}
+
+/********************* COLORS *********************/
+
+.bgOrange {
+    background-color: var(--orange) !important;
+}
+
+.colorOrange {
+    color: var(--orange) !important;
+}
+
+.colorGrey {
+    color: var(--grey) !important;
+
+}
+
+/********************* FONTES *********************/
+
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.openSans {
+    font-family: 'Open Sans' !important;
+}
+
+.openSansSemi {
+    font-family: 'Open Sans' !important;
+    font-weight: 600;
+}
+
+.montserratBold {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+/********************* TOP HEADER *********************/
+
+.top-header {
+    font-size: 13px !important;
+    letter-spacing: .8px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-search-input {
+    border: 0px !important;
+    margin: 5px 0 !important;
+    width: 60% !important;
+    height: 2rem !important
+}
+
+.header-search-input::placeholder {
+    font-size: 12px
+}
+
+.header-search-button {
+    position: absolute;
+    height: 2rem !important;
+    margin: 5px 0 !important;
+    background-color: transparent !important;
+}
+
+.header-search-button i {
+    color: #6f6f6f
+}
+
+/********************* MENU *********************/
+
+.menu {
+    margin-top: -10px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0.25);
+}
+
+.menu-redes img {
+    margin-right: 7px;
+    width: 25px
+}
+
+.menu-logo img {
+    height: 120px;
+}
+
+.menu-space {
+    padding-top: 10px !important
+}
+
+.menu-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-actions img {
+    width: 25px;
+    margin-left: 7px;
+}
+
+.menu-cart-show {
+    position: absolute;
+    top: -.8rem;
+    width: 17px;
+    right: -.10rem;
+    border-radius: 50%;
+    padding: 0px !important;
+    height: 16px;
+    font-size: .7rem;
+}
+
+.menu-itens {
+    color: #848484;
+    margin-top: 1rem;
+}
+
+.menu-itens>a, .menu-itens>div {
+    margin: 0;
+    padding: 5px 3rem
+}
+
+.dropdown-main {
+    position: relative
+}
+
+.dd-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0px 30px 0px 20px;
+    background-color: transparent !important;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px !important;
+    color: #848484;
+}
+
+.dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+
+.dd-input {
+    display: none;
+}
+
+.dd-menu {
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+    z-index: 9999999;
+}
+
+.dd-button .dd-menu {
+    display: none;
+}
+
+.dd-button:hover .dd-menu {
+    display: block;
+    color: #848484
+}
+
+.dd-button:hover {
+    color: white;
+}
+
+.dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dd-menu li:hover {
+    background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/********************* SLIDER *********************/
+
+.banner-row {
+    display: flex;
+    align-items: center;
+}
+
+.banner-img img {
+    width: 60%;
+}
+
+.banner-text img {
+    width: 70%;
+}
+
+.banner-button {
+    font-size: 1.2rem;
+    padding: 6px 1rem;
+    border: 2px solid white;
+    outline: 4px solid var(--orange)
+}
+
+.destaques {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 !important;
+}
+
+.destaques img {
+    height: 35px;
+}
+
+.destaques > div {
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.destaques-line {
+    border-right: 1px solid #6f6f6f
+}
+
+.destaque-text {
+    font-size: .8rem;
+    line-height: .8rem;
+}
+
+.destaque-text span {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+/********************* DIVIDER *********************/
+.divider {
+    height: 2px;
+}
+
+/********************* CAROUSEL *********************/
+.carousel-title {
+    font-size: 1.5rem
+}
+
+.carousel-title-content {
+    padding: 0 4rem !important
+}
+
+.control-ajust {
+    cursor: pointer
+}
+
+.control-ajust i {
+    padding-top: .55rem;
+    font-size: 2rem;
+}
+
+.grid-item {
+    padding: 1rem !important
+}
+
+.grid-image {
+    width: 100%;
+}
+
+.grid-title {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-rate img {
+    width: 18px;
+    margin: 4px
+}
+
+
+/********************* NEWSLETTER *********************/
+.newsletter {
+    background-color: #252222;
+    padding: 1rem 2rem;
+    line-height: 1.2rem;
+}
+
+.newsletter-input {
+    background-color: white !important;
+    border: 0px !important
+}
+
+.newsletter-btn {
+    background-color: var(--orange);
+    width: 100%;
+    height: 45px;
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********************* FOOTER *********************/
+footer {
+    padding: 3rem 0
+}
+
+.footer-title {
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    font-size: .8rem
+}
+
+.row-footer {
+    justify-content: space-around;
+}
+
+.footer-redes img {
+    margin: 0 5px
+}
+
+.infos {
+    padding: 1rem 0 !important
+}
+
+.info-item {
+    padding: 0 1rem !important
+}
+
+.info-img {
+    width: 100%;
+}
+
+.info-img2 {
+    width: 50%;
+}
+
+.copyright {
+    color: #272727;
+    padding: 1rem 0;
+    font-size: .9rem
+}
+
+.codestack, .creativecode {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.codestack img, .creativecode img{
+    width: 180px;
+}
+
+.codestack {
+    left: 0;
+}
+
+.creativecode {
+    right: 0
+}
